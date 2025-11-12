@@ -43,10 +43,10 @@ export default function Footer() {
 
           {/* Social Media */}
           <div className="flex gap-4 mt-5 text-xl">
-            <a href="https://www.instagram.com/nexodeofficial?igsh=ZXFzZzZhOHAzeTNo" aria-label="Instagram" className="hover:text-cyan-400 hover:scale-110 transition-transform">
+            <a href="https://www.instagram.com/nexodeofficial" aria-label="Instagram" className="hover:text-cyan-400 hover:scale-110 transition-transform">
               <FaInstagram />
             </a>
-            <a href="https://www.tiktok.com/@nexodeofficial?_r=1&_t=ZS-91KP6TB3k1J" aria-label="TikTok" className="hover:text-cyan-400 hover:scale-110 transition-transform">
+            <a href="https://www.tiktok.com/@nexodeofficial" aria-label="TikTok" className="hover:text-cyan-400 hover:scale-110 transition-transform">
               <FaTiktok />
             </a>
           </div>
