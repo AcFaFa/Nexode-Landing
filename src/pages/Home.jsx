@@ -3,11 +3,10 @@ import { Link } from "react-router-dom";
 
 const Home = () => {
   const [launchDate] = useState(() => {
-    const now = new Date();
-    const target = new Date();
-    target.setDate(now.getDate() + 60); // Launch dalam 60 hari dari sekarang
+    const target = new Date("2025-12-25T00:00:00"); // Launching pada 25 Desember 2025 pukul 00:00
     return target.getTime();
   });
+
 
   const [timeLeft, setTimeLeft] = useState({
     days: 0,
@@ -61,8 +60,9 @@ const Home = () => {
       </div>
 
       <p className="text-sm text-gray-500 mb-10">
-        🚀 Launching Resmi dalam 60 Hari
+        🚀 Launching Resmi pada 25 Desember 2025
       </p>
+
 
       {/* CTA Buttons */}
       <div className="flex gap-4 flex-wrap justify-center">
