@@ -33,17 +33,17 @@ export default function Services() {
   const pricing = [
     {
       title: "Landing Page",
-      price: "Mulai 2 Juta",
+      // price: "Mulai 2 Juta",
       desc: "Profil bisnis + Call to Action + SEO ready",
     },
     {
       title: "Company Website",
-      price: "Mulai 5 Juta",
+      // price: "Mulai 5 Juta",
       desc: "Multi-page, admin panel opsional, scalable",
     },
     {
       title: "Custom App",
-      price: "Mulai 10 Juta",
+      // price: "Mulai 10 Juta",
       desc: "Sistem bisnis sesuai kebutuhan & siap berkembang",
     },
   ];
