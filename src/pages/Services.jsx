@@ -33,20 +33,18 @@ export default function Services() {
   const pricing = [
     {
       title: "Landing Page",
-      // price: "Mulai 2 Juta",
       desc: "Profil bisnis + Call to Action + SEO ready",
     },
     {
       title: "Company Website",
-      // price: "Mulai 5 Juta",
       desc: "Multi-page, admin panel opsional, scalable",
     },
     {
       title: "Custom App",
-      // price: "Mulai 10 Juta",
       desc: "Sistem bisnis sesuai kebutuhan & siap berkembang",
     },
   ];
+
 
   return (
     <section className="py-24 bg-neutral-950 text-center px-6">
@@ -89,29 +87,35 @@ export default function Services() {
 
       {/* Pricing Section */}
       <h3 className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500 mb-8">
-        Paket Harga
+        Dapatkan Penawaran
       </h3>
+
       <div className="grid gap-8 md:grid-cols-3 max-w-6xl mx-auto mb-16">
         {pricing.map((p, i) => (
-          <div key={i}
+          <div
+            key={i}
             className="bg-neutral-900 p-8 rounded-xl border border-neutral-800
             hover:border-cyan-500/50 transition-all shadow-lg"
           >
             <h4 className="text-xl font-bold text-cyan-400 mb-2">{p.title}</h4>
-            <p className="text-2xl font-semibold text-white mb-3">{p.price}</p>
             <p className="text-gray-400 text-sm mb-6">{p.desc}</p>
             <a
-              href="https://wa.me/6281312582737?text=Halo%20Nexode,%20saya%20ingin%20tanya%20tentang%20paket"
+              href={`https://wa.me/6281312582737?text=Halo%20Nexode,%20saya%20tertarik%20dengan%20${encodeURIComponent(p.title)}%20dan%20ingin%20tanya%20harga%20lebih%20lanjut`}
               target="_blank"
               rel="noopener noreferrer"
               className="bg-cyan-500 hover:bg-cyan-600 w-full block text-black
               font-semibold py-3 rounded-xl transition-all"
             >
-              Pesan Sekarang
+              Dapatkan Penawaran 💬
             </a>
           </div>
         ))}
       </div>
+
+      <p className="text-gray-400 max-w-2xl mx-auto mb-8">
+        Setiap proyek kami sesuaikan dengan kebutuhan dan skala bisnis Anda.
+        Dapatkan estimasi biaya terbaik melalui konsultasi gratis.
+      </p>
 
       {/* CTA Bottom */}
       <a
@@ -123,7 +127,6 @@ export default function Services() {
       >
         Konsultasi Gratis Sekarang 🚀
       </a>
-
     </section>
   );
 }
